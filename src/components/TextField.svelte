@@ -6,7 +6,7 @@
     $: onChange(inputValue);
 </script>
 
-<label class="text-xl block m-4 md:text-center md:w-1/4">
+<label class="block m-4 p-4 text-2xl text-center">
     {label}
-    <input bind:value={inputValue} class="shadow-inner border-2 focus:outline-none p-2 block md:w-full"/>
+    <input value={inputValue} class="block shadow-inner p-2 focus:outline-none border-2 rounded-md w-full text-xl">
 </label>

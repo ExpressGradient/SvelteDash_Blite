@@ -4,6 +4,7 @@
 	import OutlineButton from "./components/OutlineButton.svelte";
 	import Card from "./components/Card.svelte";
 	import TextField from "./components/TextField.svelte";
+	import Form from "./components/Form.svelte";
 </script>
 
 <AppBar title={{ label: "Hello World", onClick: () => console.log("Hello World") }} navLinks={[{label: "Link1", route: "/"}, {label: "Link2", route: "/"}, {label: "Link3", route: "/"}]}/>
@@ -29,3 +30,9 @@
 
 	<RaisedButton label={"Hello World"} onClick={() => console.log("Button Clicked")} />
 </Card>
+
+<Form label="LongFormLabelHelloWorld" onSubmit={() => console.log("Form Submitted")}>
+	<TextField label={"Hello World"} onChange={(newValue) => console.log(newValue)} />
+	<TextField label={"Hello World"} onChange={(newValue) => console.log(newValue)} />
+	<RaisedButton label={"Hello World"} onClick={() => console.log("Button Clicked")} darkMode={"true"} />
+</Form>
