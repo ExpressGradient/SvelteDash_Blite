@@ -7,6 +7,7 @@
 	import TextField from "./components/TextField.svelte";
 	import Form from "./components/Form.svelte";
 	import Code from "./components/Code.svelte";
+	import Accordion from "./components/Accordion.svelte";
 
 	const codes = [
 		"<h1>Hello World</h1>",
@@ -40,5 +41,7 @@
 	<TextField label={"Hello World"} onChange={(newValue) => console.log(newValue)} />
 	<RaisedButton label={"Hello World"} onClick={() => console.log("Button Clicked")} darkMode={"true"} />
 </Form>
+
+<Accordion duration={500} />
 
 <Code {codes} />
