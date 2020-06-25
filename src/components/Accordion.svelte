@@ -11,9 +11,9 @@
 
 
 <Card>
-    <div class="flex flex-row justify-between">
-        <h1 class="flex-auto text-2xl p-2">{title}</h1>
-        <p class="text-3xl p-2 cursor-pointer" on:click={toggleExpanded}>
+    <div class="flex flex-row justify-between cursor-pointer shadow-inner p-4" on:click={toggleExpanded}>
+        <h1 class="flex-auto text-2xl">{title}</h1>
+        <p class="text-3xl">
             {#if expanded}
                 x
             {:else}
