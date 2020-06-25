@@ -22,6 +22,8 @@
         </p>
     </div>
     {#if expanded}
-        <slot transition:slide={{ duration: duration }} />
+        <div transition:slide={{ duration: duration }}>
+            <slot />
+        </div>
     {/if}
 </Card>
