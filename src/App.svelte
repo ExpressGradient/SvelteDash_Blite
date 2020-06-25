@@ -42,6 +42,8 @@
 	<RaisedButton label={"Hello World"} onClick={() => console.log("Button Clicked")} darkMode={"true"} />
 </Form>
 
-<Accordion duration={500} />
+<Accordion title="Hello World">
+	<p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae deleniti, dolor doloremque esse, ex id incidunt ipsa ipsum itaque laudantium magnam minima nesciunt nisi omnis quo repellat repellendus sequi sit ut veritatis voluptate voluptatem? Ad autem, enim eveniet id laboriosam laborum nemo recusandae, tempora tempore ut vel voluptatibus.</p>
+</Accordion>
 
 <Code {codes} />
