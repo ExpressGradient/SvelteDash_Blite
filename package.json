@@ -5,16 +5,16 @@
   "license": "MIT",
   "scripts": {
     "watch:tailwind": "postcss public/tailwind.css -o public/index.css -w",
-    "build:tailwind": "NODE_ENV=production postcss public/tailwind.css -o public/index.css",
-    "dev": "run-p start:dev autobuild watch:tailwind",
+    "build:tailwind": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/index.css",
+    "dev": "run-p autobuild watch:tailwind",
     "build": "npm run build:tailwind && rollup -c",
     "start": "sirv public --single",
-    "start:dev": "sirv public --single --dev",
     "autobuild": "rollup -c -w"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^12.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
+    "cross-env": "^7.0.2",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^7.1.1",
     "rollup": "^2.3.4",
